@@ -1,0 +1,24 @@
+name: Tanushree Sharma
+dp: /assets/images/headshot.jpg
+bio: <p> I'm a Product Manager for <a href="https://workers.cloudflare.com/">Cloudflare Workers</a> building products for developers. </p>
+email: tanushree@hotmail.ca
+description_socials: "
+  <p>  
+  <br / >
+  I love working on tech that solves meaninfgul problems. 
+  </p>
+  <br/>
+  <p>
+    Connect with me:
+  </p>
+"
+
+contact:
+  - title: linkedin
+    url: https://www.linkedin.com/in/tanushree-s/
+  - title: twitter
+    url: https://twitter.com/_tanushreeeee
+  - title: github
+    url: https://github.com/tanushree-sharma
+  - title: email
+    url: mailto:tanushree@hotmail.ca

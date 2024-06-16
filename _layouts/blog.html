@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <main>
+      {% include header.html %} {% include bio.html %}
+      <section class="articles">
+        <h3 class="article-title"> Some things I'm working on:  </h3>
+        {% for post in site.posts %}
+        <article class="article">
+          <h2 class="article-title">
+            <a href="{{post.link}}"target="_blank" rel="noopener noreferrer"> {{post.title}} </a> 
+          </h2>
+          <small class="date">{{post.date | date_to_string}}</small>
+          <div class="categories">
+            {% for c in post.categories %}
+            <a href="#!" data-base-url="{{site.baseurl}}" class="category"
+              >{{c}}</a
+            >
+            {% endfor %}
+            
+          </div>
+          <small class="description">{{post.description}}</small>
+        </article>
+        {%endfor%}
+      </section>
+      {% include footer.html %}
+    </main>
+    {% include category-modal.html%}
+  </body>
+</html>
